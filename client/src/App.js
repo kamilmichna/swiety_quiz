@@ -6,12 +6,12 @@ class App extends Component {
   render() {
     return (
        <div>
-          <button onClick={this.handleClick}>Chuj</button>
+          <button onClick={this.handleClick}>Chuja</button>
        </div>
     );
   }
   handleClick(e){
-    fetch("http://localhost:2000/")
+    fetch("/api/question")
     .then(response => response.json())
     .then(jsondata => console.log(jsondata))
   }
