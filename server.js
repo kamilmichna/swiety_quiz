@@ -2,6 +2,8 @@ const Koa = require('koa');
 const cors = require('@koa/cors');
 const serve = require('koa-static');
 const json = require('koa-json')
+const port = process.env.PORT || 5000;
+
 // Create Koa app
 const app = new Koa();
 const router = require('./routes');
@@ -16,6 +18,6 @@ app.use(cors()); //cors
 
 
 // Start the server
-app.listen(2000,()=>{
+app.listen(port,()=>{
     console.log("server is working")
 });
