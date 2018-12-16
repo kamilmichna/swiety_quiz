@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background-color: #7C17E0;
+    background-color: #0075F2;
     width: 100vw;
     height: 10vh;
     display: flex;
@@ -41,8 +41,8 @@ main{
 }
 
 #xx{
-    border-bottom: 5px solid #7C17E0;
-    border-right: 5px solid #7C17E0;
+    border-bottom: 5px solid #0075F2;
+    border-right: 5px solid #0075F2;
     padding-bottom: 1vh;
     padding-right: 1vw;
     font-size: 44px;
@@ -58,9 +58,9 @@ section{
 
 button{
     background-color: #ffffff;
-    border: 5px solid #7C17E0;
+    border: 5px solid #0075F2;
     font-size: 36px;
-    color: #7C17E0;
+    color: #0075F2;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 3vh;
