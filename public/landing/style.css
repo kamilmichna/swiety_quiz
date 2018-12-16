@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#container{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: #7C17E0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 2vw;
+    
+}
+
+#logo{
+    width: 50vw;
+    text-align: left;
+    padding-left: 10px;
+}
+
+nav{
+    width: 50vw;
+    text-align: right;
+    padding-right: 10px;
+}
+
+main{
+    width: 98vw;
+    height: 87vh;
+    background-color: #ffffff;
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+
+#xx{
+    border-bottom: 5px solid #7C17E0;
+    border-right: 5px solid #7C17E0;
+    padding-bottom: 1vh;
+    padding-right: 1vw;
+    font-size: 44px;
+    
+    
+}
+
+section{
+    font-size:24px;
+    width: 80vw;
+    margin-left: 5vw;
+}
+
+button{
+    background-color: #ffffff;
+    border: 5px solid #7C17E0;
+    font-size: 36px;
+    color: #7C17E0;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-left: 33vw;
+}

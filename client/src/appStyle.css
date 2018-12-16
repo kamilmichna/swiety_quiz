@@ -1,0 +1,26 @@
+body{
+    width: 100vw;
+    height: 100vh;
+  
+   
+}
+header{
+    width: 100vw;
+    height: 5vh;
+    background-color: #7C17E0;
+}
+main{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.buttons__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    height: 30vh;
+}
