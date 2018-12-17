@@ -3,13 +3,17 @@ import "./ButtonStyle.css";
 
 
 class Button extends Component {
+  constructor(props){
+    super(props);
+    this.clickHandle = this.clickHandle.bind(this);
+  }
   render() {
     return (
-       <button className="answer_button"onClick={this.clickHandle}>{this.props.content}</button>
+       <button className="answer_button" onClick={this.clickHandle}>{this.props.item.content}</button>
     );
   }
   clickHandle(){
-    document.querySelector('.card').classList.add('card--hidden');
+      this.props.onSelect(this.props.item); 
   }
 
 }

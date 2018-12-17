@@ -1,3 +1,4 @@
+
 body{
     width: 100vw;
     height: 100vh;
@@ -22,5 +23,5 @@ main{
     justify-content: space-around;
     align-items: center;
     width: 40vw;
-    height: 30vh;
+    height: 20vh;
 }
