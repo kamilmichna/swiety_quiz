@@ -1,23 +1,32 @@
 import React, { Component } from 'react';
 import "./appStyle.css";
 import Button from "./Button";
+import Modal from "./Modal";
 import Card from "./Card";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {question: {},answerStreak: 0};
+    this.state = {question: {},answerStreak: 0,isModalVisible: false,isModalGood: false};
+
     this.onDecision = this.onDecision.bind(this);
+    this.win = this.win.bind(this);
+    this.loose = this.loose.bind(this);
+    this.getQuestion = this.getQuestion.bind(this);
+    this.showModal = this.showModal.bind(this);
   }
   render() {
       let buttons;
+      this.card = document.querySelector('.card'); // card el
       if (this.state.question.answers){
           buttons = this.state.question.answers.map((el)=>{
             return <Button onSelect={this.onDecision} item={el}></Button>
       })
+
     
     }
     return (
        <div>
+            <Modal isVisible={this.state.isModalVisible} isGood={this.state.isModalGood}/>
             <header></header>
             <main>
                <p>Licznik dobrych odpowiedzi: {this.state.answerStreak}</p>
@@ -33,22 +42,48 @@ class App extends Component {
   componentDidMount(){
     this.getQuestion();   
   }
-
+ 
   getQuestion(){
     fetch("/api/get_question")
     .then(response => response.json())
-    .then(jsondata => this.setState({question: jsondata}))
+    .then(jsondata => this.setState({question: jsondata}));
+    
+    
+  }
+  showModal(isGood){
+    if (isGood === true){
+      this.setState({isModalGood:true})
+    }
+    else{
+      this.setState({isModalGood:false})
+    }
+    this.setState({isModalVisible:true});
+    this.getQuestion();
+    window.setTimeout(()=>this.setState({isModalVisible:false}),2000)
+    window.setTimeout(()=>this.card.classList.remove('card--hidden'),2000)
+  
+  }
+  win(){
+      console.log('good')
+      this.card.classList.add('card--hidden');
+      this.setState({answerStreak: this.state.answerStreak+1});
+      this.showModal(true);
+ 
+  }
+  loose(){
+      console.log('bad')
+      this.card.classList.add('card--hidden');
+      this.setState({answerStreak: 0});
+      this.showModal(false);
   }
 
   onDecision(decision){
+
       if (decision.isTrue === true){ //selected answer is true
-        this.setState({answerStreak: this.state.answerStreak+1});
-        alert("dobra odp!!!")
-     
+          this.win();
       }
       else{   //selected answer is false
-        this.setState({answerStreak: 0});
-        alert("zła odp!!!")
+          this.loose();
       }
   }
  

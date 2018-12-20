@@ -1,0 +1,25 @@
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    transition-duration: 1s;
+}
+.modal p{
+    font-size: 5vw;
+}
+.modal--good{
+    background-color: rgb(46, 224, 46);
+}
+.modal--bad{
+    background-color: rgb(224, 46, 46);
+}
+.modal--invisible{
+    left: -100vw;
+    transition-duration: 1s;
+}
