@@ -53,14 +53,19 @@ class App extends Component {
   showModal(isGood){
     if (isGood === true){
       this.setState({isModalGood:true})
+      this.setState({isModalVisible:true});
+      this.getQuestion();
+      window.setTimeout(()=>this.setState({isModalVisible:false}),2000)
+      window.setTimeout(()=>this.card.classList.remove('card--hidden'),2000)
     }
     else{
       this.setState({isModalGood:false})
+      this.setState({isModalVisible:true});
+      this.getQuestion();
+      window.setTimeout(()=>this.setState({isModalVisible:false}),4000)
+      window.setTimeout(()=>this.card.classList.remove('card--hidden'),4000)
     }
-    this.setState({isModalVisible:true});
-    this.getQuestion();
-    window.setTimeout(()=>this.setState({isModalVisible:false}),2000)
-    window.setTimeout(()=>this.card.classList.remove('card--hidden'),2000)
+   
   
   }
   win(){

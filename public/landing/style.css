@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background-color: #0075F2;
+    background-color: #773CF5;
     width: 100vw;
     height: 10vh;
     display: flex;
@@ -41,8 +41,8 @@ main{
 }
 
 #xx{
-    border-bottom: 5px solid #0075F2;
-    border-right: 5px solid #0075F2;
+    border-bottom: 5px solid #773CF5;
+    border-right: 5px solid #773CF5;
     padding-bottom: 1vh;
     padding-right: 1vw;
     font-size: 44px;
@@ -58,12 +58,18 @@ section{
 
 button{
     background-color: #ffffff;
-    border: 5px solid #0075F2;
+    border: 5px solid #773CF5;
     font-size: 36px;
-    color: #0075F2;
+    color: #773CF5;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
     margin-left: 33vw;
+    transition-duration: 0.5s;
+}
+button:hover{
+    background-color: #773CF5;
+    color:white;
+    cursor: pointer;
 }

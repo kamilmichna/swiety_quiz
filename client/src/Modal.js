@@ -12,10 +12,10 @@ class Button extends Component {
           isGood = this.props.isGood;   
       if (isVisible===true){
           if (isGood === false){
-            return <div className="modal modal--bad"><p>Zła odpowiedź :(</p></div>;
+            return <div className="modal modal--bad"><p>Zła odpowiedź, zacznij od nowa!</p></div>;
           }
           else {
-            return <div className="modal modal--good"><p>Świetna odpowiedź!</p></div>;
+            return <div className="modal modal--good"><p>Brawo! Świetna odpowiedź!</p></div>;
           }
           
       }
