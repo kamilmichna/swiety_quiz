@@ -6,8 +6,7 @@ import Card from "./Card";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {question: {},answerStreak: 0,isModalVisible: false,isModalGood: false};
-
+    this.state = {question: {},answerStreak: 0,isModalVisible: false,isModalGood: false,idList: []};
     this.onDecision = this.onDecision.bind(this);
     this.win = this.win.bind(this);
     this.loose = this.loose.bind(this);
@@ -46,7 +45,17 @@ class App extends Component {
   getQuestion(){
     fetch("/api/get_question")
     .then(response => response.json())
-    .then(jsondata => this.setState({question: jsondata}));
+    .then(jsondata => {
+    if (this.state.idList.includes(jsondata.id) === false){
+         this.setState({question: jsondata,idList: [...this.state.idList,jsondata.id]});
+    }
+    else {
+      this.getQuestion();
+    }
+
+  
+      
+    });
     
     
   }
@@ -69,16 +78,15 @@ class App extends Component {
   
   }
   win(){
-      console.log('good')
       this.card.classList.add('card--hidden');
       this.setState({answerStreak: this.state.answerStreak+1});
       this.showModal(true);
+
  
   }
   loose(){
-      console.log('bad')
       this.card.classList.add('card--hidden');
-      this.setState({answerStreak: 0});
+      this.setState({answerStreak: 0,idList: []});
       this.showModal(false);
   }
 
