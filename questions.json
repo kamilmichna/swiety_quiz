@@ -1,4 +1,58 @@
 {
-    "content": "kremówki były ulubionyym przysmakiem świętego:",
-    "answers": [{"content": "Jan Paweł II","isTrue": true},{"content": "Święty Franciszek","isTrue": false},{"content": "Matka teresa z Kalkuty","isTrue":false}]
+    "questions": [
+        {
+            "content": "kremówki były ulubionyym przysmakiem świętego:",
+            "id": 1,
+            "answers": [{
+                "content": "Jan Paweł II",
+                "isTrue": true
+            }, {
+                "content": "Święty Franciszek",
+                "isTrue": false
+            }, {
+                "content": "Matka teresa z Kalkuty",
+                "isTrue": false
+            },{
+                "content" : "św. Benedykt Labre",
+                "isTrue": false
+            }]
+        
+        },
+        {
+            "content": "Święty, który był żebrakiem:",
+            "id": 2,
+            "answers": [{
+                "content": "św. Jan Kapistran",
+                "isTrue": false
+            }, {
+                "content": "św. Benedykt Labre",
+                "isTrue": true
+            }, {
+                "content": "Matka teresa z Kalkuty",
+                "isTrue": false
+            },{
+                "content" : "św. Kazimierz ",
+                "isTrue": false
+            }]
+        },
+        {
+            "content": "Pytanie nr 3",
+            "id": 3,
+            "answers": [{
+                "content": "św. Jan Kapistran",
+                "isTrue": false
+            }, {
+                "content": "św. Benedykt Labre",
+                "isTrue": true
+            }, {
+                "content": "Matka teresa z Kalkuty",
+                "isTrue": false
+            },{
+                "content" : "św. Kazimierz ",
+                "isTrue": false
+            }]
+        }
+        
+        
+    ]
 }
