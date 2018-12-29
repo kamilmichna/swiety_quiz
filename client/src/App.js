@@ -17,8 +17,8 @@ class App extends Component {
       let buttons;
       this.card = document.querySelector('.card'); // card el
       if (this.state.question.answers){
-          buttons = this.state.question.answers.map((el)=>{
-            return <Button onSelect={this.onDecision} item={el}></Button>
+          buttons = this.state.question.answers.map((el,i)=>{
+            return <Button key={i} onSelect={this.onDecision} item={el}></Button>
       })
 
     
@@ -28,7 +28,7 @@ class App extends Component {
             <Modal isVisible={this.state.isModalVisible} isGood={this.state.isModalGood}/>
             <header></header>
             <main>
-               <p>Licznik dobrych odpowiedzi: {this.state.answerStreak}</p>
+               <p class="good_answers_counter">Licznik dobrych odpowiedzi: {this.state.answerStreak}</p>
                <Card content={this.state.question.content}/>
                <div className="buttons__container">
                   {buttons}
@@ -63,14 +63,14 @@ class App extends Component {
     if (isGood === true){
       this.setState({isModalGood:true})
       this.setState({isModalVisible:true});
-      this.getQuestion();
+      window.setTimeout(()=>this.getQuestion(),1000)
       window.setTimeout(()=>this.setState({isModalVisible:false}),2000)
       window.setTimeout(()=>this.card.classList.remove('card--hidden'),2000)
     }
     else{
       this.setState({isModalGood:false})
       this.setState({isModalVisible:true});
-      this.getQuestion();
+      window.setTimeout(()=>this.getQuestion(),1000)
       window.setTimeout(()=>this.setState({isModalVisible:false}),4000)
       window.setTimeout(()=>this.card.classList.remove('card--hidden'),4000)
     }

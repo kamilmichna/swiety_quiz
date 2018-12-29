@@ -1,7 +1,25 @@
 .answer_button{
     border: none;
-    background-color: #773CF5;
+    background-color: white;
+    border: 3px solid #773CF5;
+    font-weight: 700;
+    border-radius: 3vw;
+    font-size: 2em;
     width: 20%;
-    height: 5vh;
+    min-height: 7vh;
+    color: #773CF5;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition-duration: 0.5s;
+}
+.answer_button:hover{
+    cursor: pointer;
     color: white;
+    background-color: #773CF5;
+}
+@media (max-width: 600px) {
+    .answer_button{
+        width: 20vw;
+    }
 }

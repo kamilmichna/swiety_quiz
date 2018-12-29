@@ -2,13 +2,14 @@
 body{
     width: 100vw;
     height: 100vh;
-  
+    font-size: 10px;
    
 }
 header{
     width: 100vw;
     height: 5vh;
     background-color: #773CF5;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 main{
     width: 100vw;
@@ -22,6 +23,17 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40vw;
+    width: 100vw;
     height: 20vh;
+}
+.good_answers_counter{
+    font-size: 2.5em;
+    color: #773CF5;
+}
+@media (max-width: 600px) {
+    body{
+       
+        font-size: 7px;
+       
+    }
 }
