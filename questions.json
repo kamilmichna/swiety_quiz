@@ -1,58 +1,75 @@
 {
     "questions": [
+
         {
-            "content": "kremówki były ulubionyym przysmakiem świętego:",
+            "content": "Ile lat żył święty Stanisław Kostka?",
             "id": 1,
             "answers": [{
-                "content": "Jan Paweł II",
+                "content": "18",
                 "isTrue": true
             }, {
-                "content": "Święty Franciszek",
+                "content": "29",
                 "isTrue": false
             }, {
-                "content": "Matka teresa z Kalkuty",
+                "content": "10",
                 "isTrue": false
-            },{
-                "content" : "św. Benedykt Labre",
+            }, {
+                "content": "16",
                 "isTrue": false
             }]
-        
         },
         {
-            "content": "Święty, który był żebrakiem:",
+            "content": "Imię pierwszego męczennika:",
             "id": 2,
             "answers": [{
-                "content": "św. Jan Kapistran",
-                "isTrue": false
-            }, {
-                "content": "św. Benedykt Labre",
+                "content": "Szczepan",
                 "isTrue": true
             }, {
-                "content": "Matka teresa z Kalkuty",
+                "content": "Piotr",
+                "isTrue": false
+            }, {
+                "content": "Wojciech",
                 "isTrue": false
             },{
-                "content" : "św. Kazimierz ",
+                "content" : "Adam",
                 "isTrue": false
             }]
         },
         {
-            "content": "Pytanie nr 3",
+            "content": "Święty, który w młodości trwonił pieniądze a obecnie jest symbolem ubóstwa:",
             "id": 3,
             "answers": [{
-                "content": "św. Jan Kapistran",
-                "isTrue": false
-            }, {
-                "content": "św. Benedykt Labre",
+                "content": "Święty Franciszek",
                 "isTrue": true
             }, {
-                "content": "Matka teresa z Kalkuty",
+                "content": "Święty Wojciech",
+                "isTrue": false
+            }, {
+                "content": "Święta Faustyna",
                 "isTrue": false
             },{
-                "content" : "św. Kazimierz ",
+                "content" : "Benedykt XIV",
+                "isTrue": false
+            }]
+        },
+        {
+            "content": "Święty, który był żołnierzem to:",
+            "id": 4,
+            "answers": [{
+                "content": "Święty Jerzy",
+                "isTrue": true
+            }, {
+                "content": "Święty Bronisław",
+                "isTrue": false
+            }, {
+                "content": "Święta Faustyna",
+                "isTrue": false
+            },{
+                "content" : "Święty Alojzy",
                 "isTrue": false
             }]
         }
-        
-        
+
+
     ]
 }

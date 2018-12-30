@@ -28,7 +28,7 @@ class App extends Component {
             <Modal isVisible={this.state.isModalVisible} isGood={this.state.isModalGood}/>
             <header></header>
             <main>
-               <p class="good_answers_counter">Licznik dobrych odpowiedzi: {this.state.answerStreak}</p>
+               <p className="good_answers_counter">Licznik dobrych odpowiedzi: {this.state.answerStreak}</p>
                <Card content={this.state.question.content}/>
                <div className="buttons__container">
                   {buttons}
@@ -71,8 +71,8 @@ class App extends Component {
       this.setState({isModalGood:false})
       this.setState({isModalVisible:true});
       window.setTimeout(()=>this.getQuestion(),1000)
-      window.setTimeout(()=>this.setState({isModalVisible:false}),4000)
-      window.setTimeout(()=>this.card.classList.remove('card--hidden'),4000)
+      window.setTimeout(()=>this.setState({isModalVisible:false}),3000)
+      window.setTimeout(()=>this.card.classList.remove('card--hidden'),3000)
     }
    
   
