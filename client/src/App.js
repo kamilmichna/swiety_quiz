@@ -3,15 +3,17 @@ import "./appStyle.css";
 import Button from "./Button";
 import Modal from "./Modal";
 import Card from "./Card";
+import Timer from "./Timer";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {question: {},answerStreak: 0,isModalVisible: false,isModalGood: false,idList: []};
+    this.state = {question: {},answerStreak: 0,isModalVisible: false,isModalGood: false,idList: [],time: 15};
     this.onDecision = this.onDecision.bind(this);
     this.win = this.win.bind(this);
     this.loose = this.loose.bind(this);
     this.getQuestion = this.getQuestion.bind(this);
     this.showModal = this.showModal.bind(this);
+    this.tick = this.tick.bind(this);
   }
   render() {
       let buttons;
@@ -26,7 +28,7 @@ class App extends Component {
     return (
        <div>
             <Modal isVisible={this.state.isModalVisible} isGood={this.state.isModalGood}/>
-            <header></header>
+            <header></header>      
             <main>
                <p className="good_answers_counter">Licznik dobrych odpowiedzi: {this.state.answerStreak}</p>
                <Card content={this.state.question.content}/>
@@ -34,14 +36,16 @@ class App extends Component {
                   {buttons}
                </div>
             </main>
+            <Timer time={this.state.time}/>
        </div>
     );
   }
 
   componentDidMount(){
     this.getQuestion();   
+    this.tick();
   }
- 
+
   getQuestion(){
     fetch("/api/get_question")
     .then(response => response.json())
@@ -71,16 +75,43 @@ class App extends Component {
       this.setState({isModalGood:false})
       this.setState({isModalVisible:true});
       window.setTimeout(()=>this.getQuestion(),1000)
-      window.setTimeout(()=>this.setState({isModalVisible:false}),3000)
-      window.setTimeout(()=>this.card.classList.remove('card--hidden'),3000)
+      window.setTimeout(()=>this.setState({isModalVisible:false}),2000)
+      window.setTimeout(()=>this.card.classList.remove('card--hidden'),2000)
     }
    
   
+  }
+  tick(){
+   
+    this.tickInterval =  window.setInterval(()=> {
+       
+        if (this.state.time > 0){
+            this.setState({time: this.state.time-1})
+       }
+       else if (this.state.time === 0){
+            window.clearInterval(this.tickInterval)
+            this.setState({time: 5});
+            this.loose();
+            window.setTimeout(()=>{
+              this.tick();
+            },3000)
+            
+            
+        }   
+    },1000)
+    
+    
+    
   }
   win(){
       this.card.classList.add('card--hidden');
       this.setState({answerStreak: this.state.answerStreak+1});
       this.showModal(true);
+      window.clearInterval(this.tickInterval);
+      window.setTimeout(()=>{
+        this.setState({time: 15});
+        this.tick();
+      },3000)
 
  
   }
@@ -88,6 +119,12 @@ class App extends Component {
       this.card.classList.add('card--hidden');
       this.setState({answerStreak: 0,idList: []});
       this.showModal(false);
+      window.clearInterval(this.tickInterval)
+      window.setTimeout(()=>{
+        this.setState({time: 15});
+        this.tick();
+      },3000)
+    
   }
 
   onDecision(decision){

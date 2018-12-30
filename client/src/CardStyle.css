@@ -1,13 +1,14 @@
 .card{
     
     min-width: 20vw;
-    height: 45vh;
+    height: 40vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 10px;
     box-sizing: border-box;
     transition-duration: 2s;
     font-size: 2em;
+    border-bottom: 5px solid #773CF5;
 }
 .card.card--hidden{
     transform: translateY(-100vh);

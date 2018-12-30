@@ -1,0 +1,18 @@
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 5vh;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #773CF5;
+    font-size: 2em;
+    padding: 15px;
+    z-index: -99999;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
