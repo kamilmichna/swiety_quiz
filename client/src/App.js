@@ -89,16 +89,14 @@ class App extends Component {
             this.setState({time: this.state.time-1})
        }
        else if (this.state.time === 0){
-            window.clearInterval(this.tickInterval)
-            this.setState({time: 5});
+            window.clearInterval(this.tickInterval);
             this.loose();
-            window.setTimeout(()=>{
-              this.tick();
-            },3000)
+          
             
             
         }   
     },1000)
+  
     
     
     
