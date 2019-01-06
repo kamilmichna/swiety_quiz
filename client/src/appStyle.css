@@ -30,6 +30,9 @@ main{
     font-size: 2.5em;
     color: #773CF5;
 }
+.logo{
+    max-height: 95%;
+}
 @media (max-width: 600px) {
     body{
        
