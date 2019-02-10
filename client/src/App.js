@@ -101,6 +101,7 @@ showModal(isGood){
        else if (this.state.time === 0){
             window.clearInterval(this.tickInterval);
             this.loose();
+            this.tick();
           
             
             
