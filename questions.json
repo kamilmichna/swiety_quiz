@@ -68,6 +68,57 @@
                 "content" : "Święty Alojzy",
                 "isTrue": false
             }]
+        },
+        {
+            "content": "Kto był pierwszym papieżem:",
+            "id": 5,
+            "answers": [{
+                "content": "Piotr",
+                "isTrue": true
+            }, {
+                "content": "Marek",
+                "isTrue": false
+            }, {
+                "content": "Jan I",
+                "isTrue": false
+            },{
+                "content" : "Teodor I",
+                "isTrue": false
+            }]
+        },
+        {
+            "content": "Jan Paweł II urodził się w:",
+            "id": 6,
+            "answers": [{
+                "content": "Wadowicach",
+                "isTrue": true
+            }, {
+                "content": "Katowicach",
+                "isTrue": false
+            }, {
+                "content": "Poznaniu",
+                "isTrue": false
+            },{
+                "content" : "Warszawie",
+                "isTrue": false
+            }]
+        },
+        {
+            "content": "W którym roku Papież Jan Paweł II został świętym?",
+            "id": 7,
+            "answers": [{
+                "content": "27 kwietnia 2014",
+                "isTrue": true
+            }, {
+                "content": "2 marca 2008",
+                "isTrue": false
+            }, {
+                "content": "6 kwietnia 2017",
+                "isTrue": false
+            },{
+                "content" : "28 listopada 2006 roku",
+                "isTrue": false
+            }]
         }
 
 
