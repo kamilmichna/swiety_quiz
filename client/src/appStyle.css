@@ -6,10 +6,21 @@ body{
    
 }
 header{
+    display: flex;
+    justify-self: center;
+    align-items: center;
     width: 100vw;
     height: 5vh;
     background-color: #773CF5;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+header a {
+    color:white;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 20px;
+
 }
 main{
     width: 100vw;

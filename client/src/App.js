@@ -29,6 +29,7 @@ class App extends Component {
        <div>
             <Modal isVisible={this.state.isModalVisible} isGood={this.state.isModalGood}/>
             <header>
+              <a href="/landing">ŚwiętyQuiz</a>
             </header>      
             <main>
                <p className="good_answers_counter">Licznik dobrych odpowiedzi: {this.state.answerStreak}</p>
