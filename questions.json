@@ -119,8 +119,316 @@
                 "content" : "28 listopada 2006 roku",
                 "isTrue": false
             }]
+        },
+        {
+            "content": "W którym roku zginął św.Maksymilian Kolbe? ",
+            "id": 8,
+            "answers": [{
+                "content": "1941",
+                "isTrue": true
+            }, {
+                "content": "1940",
+                "isTrue": false
+            }, {
+                "content": "1942",
+                "isTrue": false
+            },{
+                "content" : "1943",
+                "isTrue": false
+            }]
         }
 
 
+,
+
+
+        {
+            "content": "Kto jest patronem strażników więziennych? ",
+            "id": 9,
+            "answers": [{
+                "content": "św.Adrian",
+                "isTrue": true
+            }, {
+                "content": "św.Grzegorz",
+                "isTrue": false
+            }, {
+                "content": "św.Alojzy",
+                "isTrue": false
+            },{
+                "content" : "św.Matka Teresa z Kalkuty",
+                "isTrue": false
+            }]
+        }
+
+
+,
+
+        {
+            "content": "Kto jest patronem Europy?",
+            "id": 10,
+            "answers": [{
+                "content": "św.Cyryl",
+                "isTrue": true
+            }, {
+                "content": "św.Dominik",
+                "isTrue": false
+            }, {
+                "content": "św.Krystian",
+                "isTrue": false
+            },{
+                "content" : "św.Marcin",
+                "isTrue": false
+            }]
+        }
+
+,
+
+        {
+            "content": "Kto jest patronem dzieci i młodzieży? ",
+            "id": 11,
+            "answers": [{
+                "content": "św.Dominik Savio",
+                "isTrue": true
+            }, {
+                "content": "św.Łazarz",
+                "isTrue": false
+            }, {
+                "content": "św.Matka Teresa z Kalkuty",
+                "isTrue": false
+            },{
+                "content" : "św.Frydolin",
+                "isTrue": false
+            }]
+        }
+
+,
+
+        {
+            "content": "Patronem optyków jest? ",
+            "id": 12,
+            "answers": [{
+                "content": "św.Frydolin",
+                "isTrue": true
+            }, {
+                "content": "św.Łazarz",
+                "isTrue": false
+            }, {
+                "content": "św.Matka Teresa z Kalkuty",
+                "isTrue": false
+            },{
+                "content" : "św.Dominik",
+                "isTrue": false
+            }]
+        }
+
+,
+
+
+        {
+            "content": "Patronem zakonów rycerskich jest?",
+            "id": 13,
+            "answers": [{
+                "content": "św.Jakub Apostoł",
+                "isTrue": true
+            }, {
+                "content": "św.Łazarz",
+                "isTrue": false
+            }, {
+                "content": "św.Matka Teresa z Kalkuty",
+                "isTrue": false
+            },{
+                "content" : "św.Adrian",
+                "isTrue": false
+            }]
+        }
+
+,
+
+        {
+            "content": "Jak naprawdę na imię miał Jan Paweł II?",
+            "id": 14,
+            "answers": [{
+                "content": "Karol Wojtyła",
+                "isTrue": true
+            }, {
+                "content": "Stefan Wyszyński",
+                "isTrue": false
+            }, {
+                "content": "Jorge Mario Bergoglio",
+                "isTrue": false
+            },{
+                "content" : "Joseph Ratzinger",
+                "isTrue": false
+            }]
+        }
+
+,
+
+
+        {
+            "content": "Patronem Polski jest m.in.?",
+            "id": 15,
+            "answers": [{
+                "content": "Jan Kanty",
+                "isTrue": true
+            }, {
+                "content": "św.Rafał Kalinowski",
+                "isTrue": false
+            }, {
+                "content": "św.Jan Paweł II",
+                "isTrue": false
+            },{
+                "content" : "bł.Jerzy Popiełuszko",
+                "isTrue": false
+            }]
+        }
+
+,
+
+        {
+            "content": "Patronem trędowatych jest?",
+            "id": 16,
+            "answers": [{
+                "content": "św.Łazarz",
+                "isTrue": true
+            }, {
+                "content": "św.Zenon",
+                "isTrue": false
+            }, {
+                "content": "św.Jakub Apostoł",
+                "isTrue": false
+            },{
+                "content" : "św.Jan Kanty",
+                "isTrue": false
+            }]
+        }
+
+,
+
+        {
+            "content": "Patronem trędowatych jest?",
+            "id": 17,
+            "answers": [{
+                "content": "św.Łazarz",
+                "isTrue": true
+            }, {
+                "content": "św.Zenon",
+                "isTrue": false
+            }, {
+                "content": "św.Jakub Apostoł",
+                "isTrue": false
+            },{
+                "content" : "św.Jan Kanty",
+                "isTrue": false
+            }]
+        }
+
+,
+
+        {
+            "content": "Patronem ogrodników jest?",
+            "id": 18,
+            "answers": [{
+                "content": "św.Tryfon",
+                "isTrue": true
+            }, {
+                "content": "św.Łazarz",
+                "isTrue": false
+            }, {
+                "content": "św.Zenon",
+                "isTrue": false
+            },{
+                "content" : "św.Jakub Apostoł",
+                "isTrue": false
+            }]
+        }
+
+,
+
+        {
+            "content": "Patronem żebraków jest?",
+            "id": 19,
+            "answers": [{
+                "content": "św.Zenon",
+                "isTrue": true
+            }, {
+                "content": "św.Jakub Apostoł",
+                "isTrue": false
+            }, {
+                "content": "św.Łazarz",
+                "isTrue": false
+            },{
+                "content" : "św.Matka Teresa z Kalkuty",
+                "isTrue": false
+            }]
+        }
+
+,
+
+{
+            "content": "Patron Kierowców miał na imię:",
+            "id": 20,
+            "answers": [{
+                "content": "Krzysztof",
+                "isTrue": true
+            }, {
+                "content": "Jan",
+                "isTrue": false
+            }, {
+                "content": "Stanisław",
+                "isTrue": false
+            },{
+                "content" : "Andrzej",
+                "isTrue": false
+            }]
+        }
+
+,
+
+        {
+            "content": "Patron strażaków miał na imię:",
+            "id": 21,
+            "answers": [{
+                "content": "Florian",
+                "isTrue": true
+            }, {
+                "content": "Dawid",
+                "isTrue": false
+            }, {
+                "content": "Mateusz",
+                "isTrue": false
+            },{
+                "content" : "Jakub",
+                "isTrue": false
+            }]
+        }
+
+
+,
+
+
+
+
+{
+            "content": "Pierwszy święty chrześcijański to:",
+            "id": 22,
+            "answers": [{
+                "content": "Św. Dyzma „Dobry Łotr”",
+                "isTrue": true
+            }, {
+                "content": "Św. Krystyn",
+                "isTrue": false
+            }, {
+                "content": "Św. Wojciech",
+                "isTrue": false
+            },{
+                "content" : "Św. Szczepan",
+                "isTrue": false
+            }]
+        }
+
+
+
     ]
+    
 }
